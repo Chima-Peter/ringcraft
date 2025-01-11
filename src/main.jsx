@@ -1,13 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { ColorProvider } from './colorContext'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+import App from './App';
+import './index.css'
+import { ColorProvider } from './colorContext';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
     <ColorProvider>
       <App />
     </ColorProvider>
-  </StrictMode>,
-)
+  </React.StrictMode>
+);
