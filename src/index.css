@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Martel", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+main {
+  display: flex;
+  width: 100%;
+  background-color: #D3D3D3;
+  justify-content: space-between;
+}
+
+section {
+  height: 92vh;
+  align-self: center;
+  margin-right: 30px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  padding: 20px ;
+  border: 1px solid #D3D3D3;
+  gap: 20px;
+  width: 500px;
+  flex-direction: column;
+}
+
+section h1 {
+  align-self: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+section > div:hover {
+  background-color: #D3D3D3;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 1rem;
+}
