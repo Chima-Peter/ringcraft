@@ -6,7 +6,6 @@ const App = () => {
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<RingConfiguration />} />
-        <Route path="/l" element={<h1>testing</h1>} />
       </Routes>
     </BrowserRouter>
   )

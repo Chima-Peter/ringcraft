@@ -17,7 +17,11 @@ module.exports = {
       '2xl': '2560px',
       '4xl': '3840px'
     },
-    extend: {}
+    extend: {
+      fontFamily: {
+        "main": ["Martel"]
+      }
+    }
   },
   plugins: [
     function({ addUtilities }) {
