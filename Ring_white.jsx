@@ -2,8 +2,9 @@ import { useEffect } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useColorContext } from './src/hooks/colorContext'
 
+
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/ring_white.glb')
+  const { nodes, materials } = useGLTF('./src/assets/ring_white.glb')
 
   const { outerColor, shankColor } = useColorContext()
 
@@ -21,11 +22,6 @@ export function Model(props) {
     
 
   }, [outerColor, shankColor])
-
-  useEffect(() => {
-    console.log("Materials:", materials);
-  }, [])
-
 
 
   return (
