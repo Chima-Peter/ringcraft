@@ -4,7 +4,7 @@ import { useColorContext } from './src/hooks/colorContext'
 
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('./src/assets/ring_white.glb')
+  const { nodes, materials } = useGLTF('/ringcraft/ring_white.glb')
 
   const { outerColor, shankColor } = useColorContext()
 
